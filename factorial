@@ -1,0 +1,12 @@
+var numero = parseInt (prompt ("Ingrese un numero para dar su factorial"));
+document.write ("el factorial de tu numero es:" + factorial (numero));
+
+function factorial(numero)
+{ 
+    if(numero <= 1) {
+        return 1; 
+    }
+else {
+    return numero * factorial(numero - 1);
+}
+}
